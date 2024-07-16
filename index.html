@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game </title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+</head>
+<body>
+    <div class="start_btn"><button>Bắt Đầu!</button></div>
+
+    <div class="info_box">
+        <div class="info-title"><span>Một số quy tắc của trò chơi </span></div>
+        <div class="info-list">
+            <div class="info">1. Bạn chỉ có <span>15 giây</span> cho mỗi 1 câu hỏi.</div>
+            <div class="info">2. Sau khi bạn chọn câu trả lời, bạn không thể chọn lại nữa.</div>
+            <div class="info">3. Sau khi hết thời gian bạn không thể chọn câu trả lời được nữa.</div>
+            <div class="info">4. Bạn không thể thoát trò chơi khi đang chơi.</div>
+            <div class="info">5. Bạn sẽ nhận được điểm dựa trên số câu đúng của bạn.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Quay Lại</button>
+            <button class="restart">Chấp Nhận</button>
+        </div>
+    </div>
+
+    <!-- Hộp câu hỏi -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Trò Chơi Đố Vui</div> <!-- Tiêu đề của trò chơi -->
+            <div class="timer">
+                <div class="time_left_txt">Thời Gian Còn lại</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Tại đây câu hỏi sẽ được chèn từ questions -->
+            </div>
+            <div class="option_list">
+                <!-- Tại đây các tùy chọn sẽ được chèn từ questions -->
+            </div>
+        </section>
+
+        <!-- Chân trang của Hộp câu hỏi -->
+        <footer>
+            <div class="total_que">
+                <!-- Tại đây số lượng câu hỏi sẽ được chèn từ questions -->
+            </div>
+            <button class="next_btn">Câu Tiếp Theo</button>
+        </footer>
+    </div>
+
+    <!-- Hộp kết quả -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Bạn đã hoàn thành tất cả câu hỏi!</div>
+        <div class="score_text">
+            <!-- Tại đây kết quả điểm số sẽ được chèn từ questions -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Làm lại</button>
+            <button class="quit">Thoát</button>
+        </div>
+    </div>
+
+    <!-- Bên trong tệp js này, các câu hỏi và tùy chọn sẽ được chèn -->
+    <script src="js/questions.js"></script>
+
+    <!-- Bên trong tệp js này, tất cả mã liên quan đến trò chơi đố vui sẽ được viết -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
